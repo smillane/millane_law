@@ -3168,7 +3168,7 @@
 		background-repeat: repeat,							no-repeat;
 		background-size: auto,							cover;
 		color: #fff;
-		padding: 12em 0 20em 0;
+		padding: 9em 0 20em 0;
 		text-align: center;
 	}
 
@@ -3190,6 +3190,7 @@
 		#banner p {
 			font-size: 1.25em;
 			margin-bottom: 1.75em;
+			display: inline-block;
 		}
 
 		#banner input[type="submit"],
