@@ -1,105 +1,71 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
-
+<html lang="en">
 <head>
-    <link type="text/css" rel="stylesheet" href="assets/css/main.css" media="screen,projection" />
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Millane Law</title>
-    <meta name="Millane Law" content="company name">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contact - Millane Law</title>
+    <meta name="description" content="Contact Millane Law to schedule an appointment.">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/components.js" defer></script>
+    <style>
+        .form-row { margin-bottom: 1rem; }
+        .form-row input, .form-row textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-family: inherit;
+        }
+        .form-row input[type="submit"] {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+        }
+        .form-row input[type="submit"]:hover {
+            background-color: #2a3a4a;
+        }
+    </style>
 </head>
+<body>
+    <site-header></site-header>
 
-<body class="is-preload">
-    <div id="page-wrapper">
+    <main>
+        <section class="banner" style="padding: 2rem 1rem;">
+            <h2>Contact Us</h2>
+            <p>Schedule An Appointment</p>
+        </section>
 
-        <!--[if lt IE 7]>
-          <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
-        <header id="header">
-            <h1><a href="index.html">Millane Law</a></h1>
-            <nav id="nav">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="tel:7166894449" class="button">Call: 716-689-4449</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <main>
-            <!-- Main -->
-            <section id="main" class="container medium">
-                <header>
-                    <h2>Contact Us</h2>
-                    <p>Schedule An Appointment</p>
-                </header>
-                <div class="box">
-                    <form action="post" data-netlify="true">
-                        <div class="row gtr-50 gtr-uniform">
-                            <div class="col-6 col-12-mobilep">
-                                <input type="text" name="name" id="name" value="" placeholder="Name" />
-                            </div>
-                            <div class="col-6 col-12-mobilep">
-                                <input type="email" name="email" id="email" value="" placeholder="Email" />
-                            </div>
-                            <div class="col-12">
-                                <input type="text" name="subject" id="subject" value="" placeholder="Phone" />
-                            </div>
-                            <div class="col-12">
-                                <input type="text" name="subject" id="subject" value="" placeholder="Subject" />
-                            </div>
-                            <div class="col-12">
-                                <textarea name="message" id="message" placeholder="Brief Description of Your Legal Issue"
-                                    rows="6"></textarea>
-                            </div>
-                            <div class="row">
-                                <div data-netlify-recaptcha="true"></div>
-                            </div>
-                            <div class="col-12">
-                                <ul class="actions special">
-                                    <li><input type="submit" value="Send Message" /></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+        <section class="container">
+            <section class="box" style="max-width: 600px; margin: 0 auto; text-align: left;">
+                <form action="post" data-netlify="true">
+                    <div class="form-row">
+                        <input type="text" name="name" id="name" required placeholder="Name" />
+                    </div>
+                    <div class="form-row">
+                        <input type="email" name="email" id="email" required placeholder="Email" />
+                    </div>
+                    <div class="form-row">
+                        <input type="text" name="phone" id="phone" placeholder="Phone" />
+                    </div>
+                    <div class="form-row">
+                        <input type="text" name="subject" id="subject" placeholder="Subject" />
+                    </div>
+                    <div class="form-row">
+                        <textarea name="message" id="message" placeholder="Brief Description of Your Legal Issue" rows="6" required></textarea>
+                    </div>
+                    <div class="form-row">
+                        <div data-netlify-recaptcha="true"></div>
+                    </div>
+                    <div class="form-row" style="text-align: center;">
+                        <input type="submit" value="Send Message" class="button primary" />
+                    </div>
+                </form>
             </section>
-        </main>
+        </section>
+    </main>
 
-        <!-- Footer -->
-		<footer id="footer">
-			<ul class="copyright">
-				<li><a href="privacy.html">Privacy Policy</a></li>
-				<li><a href="disclaimer.html">Disclaimer</a></li>
-				<li><a href="sitemap.html">Sitemap</a></li>
-			</ul>
-			<ul class="copyright">
-				<li>&copy; 2023 Copyright Millane Law - All Rights Reserved - Attorney Advertising. Prior results do
-					not
-					guarantee a similar outcome.</li>
-				<li><a class="grey-text text-lighten-3" href="https://www.linkedin.com/in/smillane/" target="_blank"
-						rel="noopener noreferrer">Site by Sean Millane</a></li>
-				<li><a href="tel:7166894449">716-689-4449</a></li>
-			</ul>
-		</footer>
-	</div>
-
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.dropotron.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-
+    <site-footer></site-footer>
 </body>
-
 </html>
