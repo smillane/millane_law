@@ -88,6 +88,9 @@ nav a:hover, nav a[aria-current='page'] { color: var(--accent-color); text-decor
 .practice-card h3 { font-size: 1.5rem; margin-bottom: 0.5rem; }
 .practice-card p { font-size: 0.875rem; color: var(--secondary-color); margin-bottom: 0.35rem; }
 .practice-card a { display: inline-flex; min-height: 44px; align-items: center; font-size: 0.8rem; }
+.experience-section { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 5rem; padding-block: 3rem; border-top: 1px solid var(--rule-color); }
+.experience-section h2 { max-width: 400px; }
+.experience-copy p { color: var(--secondary-color); margin-bottom: 0.5rem; }
 .local-image { margin: 1rem 0 0; }
 .image.featured img { display: block; width: 100%; height: auto; max-height: 300px; object-fit: cover; object-position: center 12%; }
 figcaption { color: var(--secondary-color); font-size: 0.75rem; padding-top: 0.75rem; }
@@ -146,6 +149,8 @@ figcaption { color: var(--secondary-color); font-size: 0.75rem; padding-top: 0.7
   .practice-lead > p:not(.eyebrow) { max-width: none; }
   .practice-grid { border-top: 1px solid var(--rule-color); }
   .practice-card:first-child { padding-top: 1.25rem; }
+  .experience-section { grid-template-columns: 1fr; gap: 0.5rem; padding-block: 2.5rem; }
+  .experience-section h2 { font-size: 2.1rem; }
   .banner { padding-block: 2.5rem 2rem; }
   .container { padding-block: 2.5rem; }
   .home-content { padding-top: 0; }
