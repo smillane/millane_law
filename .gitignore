@@ -1,4 +1,3 @@
-
-# Local analysis reports
-/analysis_result.md
-/analysis_results.md
+# Ignore Markdown files except README.md.
+*.[mM][dD]
+!README.md
