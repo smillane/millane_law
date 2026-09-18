@@ -7,59 +7,50 @@
     <meta name="description" content="Contact Millane Law to schedule an appointment.">
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="assets/js/components.js" defer></script>
-    <style>
-        .form-row { margin-bottom: 1rem; }
-        .form-row input, .form-row textarea {
-            width: 100%;
-            padding: 0.75rem;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            font-family: inherit;
-        }
-        .form-row input[type="submit"] {
-            background-color: var(--primary-color);
-            color: white;
-            border: none;
-            cursor: pointer;
-            font-weight: 600;
-        }
-        .form-row input[type="submit"]:hover {
-            background-color: #2a3a4a;
-        }
-    </style>
 </head>
 <body>
     <site-header></site-header>
 
-    <main>
-        <section class="banner" style="padding: 2rem 1rem;">
-            <h2>Contact Us</h2>
+    <main id="main-content">
+        <section class="banner">
+            <h1>Contact Us</h1>
             <p>Schedule An Appointment</p>
         </section>
 
         <section class="container">
-            <section class="box" style="max-width: 600px; margin: 0 auto; text-align: left;">
-                <form action="post" data-netlify="true">
+            <section class="box contact-panel">
+                <form class="contact-form" name="contact" method="POST" action="/thank-you.html"
+                    data-netlify="true" netlify-honeypot="bot-field">
+                    <input type="hidden" name="form-name" value="contact" />
+                    <p hidden>
+                        <label>Leave this field empty: <input name="bot-field" /></label>
+                    </p>
+                    <p>Name, email, and a brief message are required.</p>
                     <div class="form-row">
-                        <input type="text" name="name" id="name" required placeholder="Name" />
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" autocomplete="name" required />
                     </div>
                     <div class="form-row">
-                        <input type="email" name="email" id="email" required placeholder="Email" />
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" autocomplete="email" required />
                     </div>
                     <div class="form-row">
-                        <input type="text" name="phone" id="phone" placeholder="Phone" />
+                        <label for="phone">Phone <span class="optional">(optional)</span></label>
+                        <input type="tel" name="phone" id="phone" autocomplete="tel" />
                     </div>
                     <div class="form-row">
-                        <input type="text" name="subject" id="subject" placeholder="Subject" />
+                        <label for="subject">Subject <span class="optional">(optional)</span></label>
+                        <input type="text" name="subject" id="subject" />
                     </div>
                     <div class="form-row">
-                        <textarea name="message" id="message" placeholder="Brief Description of Your Legal Issue" rows="6" required></textarea>
+                        <label for="message">Brief description of your legal issue</label>
+                        <p class="form-note" id="message-help">Please do not include confidential information.
+                            Contacting Millane Law does not create an attorney-client relationship.
+                            <a href="disclaimer.html">Read the disclaimer</a>.</p>
+                        <textarea name="message" id="message" aria-describedby="message-help" rows="5" required></textarea>
                     </div>
                     <div class="form-row">
-                        <div data-netlify-recaptcha="true"></div>
-                    </div>
-                    <div class="form-row" style="text-align: center;">
-                        <input type="submit" value="Send Message" class="button primary" />
+                        <button type="submit" class="button primary">Send Message</button>
                     </div>
                 </form>
             </section>

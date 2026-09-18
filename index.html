@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Millane Law</title>
-    <meta name="description" content="Millane Law - Attorney at Law with over 30 years of experience.">
+    <meta name="description" content="Estate planning, wills, and legal representation in Buffalo and surrounding communities. John Millane has over 30 years of legal experience.">
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="assets/js/components.js" defer></script>
 </head>
@@ -13,26 +13,61 @@
 <body>
     <site-header></site-header>
 
-    <main>
-        <section class="banner">
-            <h2>John Millane</h2>
-            <p>Attorney at Law with over 30 years of experience.</p>
-            <div class="actions">
-                <a href="contact.html" class="button primary">Contact Me</a>
-                <a href="about.html" class="button">Learn More</a>
+    <main id="main-content">
+        <section class="home-hero container" aria-labelledby="home-heading">
+            <div class="hero-copy">
+                <p class="eyebrow">Buffalo &amp; surrounding communities</p>
+                <h1 id="home-heading">Thoughtful planning.<br>Clear legal guidance.</h1>
+                <p class="hero-description">Estate planning, wills, and legal representation from an attorney
+                    with over 30 years of experience.</p>
+                <a href="contact.html" class="button primary">Discuss your legal needs <span aria-hidden="true">↗</span></a>
             </div>
+            <aside class="attorney-identity" aria-label="John Millane, attorney at law">
+                <div class="monogram" aria-hidden="true">JM</div>
+                <p class="attorney-name">John Millane</p>
+                <p>Attorney at Law<br>Retired U.S. Marine Corps Major</p>
+                <a href="about.html" class="text-link">More about John <span aria-hidden="true">↗</span></a>
+            </aside>
         </section>
 
-        <section class="container">
-            <section class="box">
-                <header>
-                    <h2>Helping the Buffalo community since 1985</h2>
-                    <p>Main practice areas include Criminal, Estate Planning, Wills, Vehicle, Traffic, Family and
-                        Divorce</p>
-                </header>
-                <div class="image featured">
-                    <img src="images/pic02.jpg" alt="Buffalo, NY" />
+        <section class="container home-content">
+            <section class="box practice-areas" aria-labelledby="practice-heading">
+                <h2 id="practice-heading" class="visually-hidden">Practice areas</h2>
+                <div class="practice-layout">
+                <section class="practice-lead" aria-labelledby="estate-heading">
+                    <p class="eyebrow">Planning for the future</p>
+                    <h3 id="estate-heading">Estate Planning &amp; Wills</h3>
+                    <p>Planning ahead starts with understanding your wishes and priorities. John helps clients
+                        consider their estate planning needs and prepare wills that reflect those wishes.</p>
+                    <a href="contact.html" class="text-link">Discuss your estate planning needs <span aria-hidden="true">↗</span></a>
+                </section>
+                <div class="practice-grid">
+                    <section class="practice-card" aria-labelledby="family-heading">
+                        <h3 id="family-heading">Family Law &amp; Divorce</h3>
+                        <p>Guidance through divorce and other family law matters, with attention to your
+                            circumstances and the decisions ahead.</p>
+                        <a href="contact.html" aria-label="Discuss your family law matter">Discuss your matter</a>
+                    </section>
+                    <section class="practice-card" aria-labelledby="criminal-heading">
+                        <h3 id="criminal-heading">Criminal Defense</h3>
+                        <p>Representation for individuals facing criminal charges, with guidance through the
+                            legal process and the options available.</p>
+                        <a href="contact.html" aria-label="Discuss your criminal defense matter">Discuss your matter</a>
+                    </section>
+                    <section class="practice-card" aria-labelledby="traffic-heading">
+                        <h3 id="traffic-heading">Traffic Matters</h3>
+                        <p>Help addressing traffic tickets and other vehicle-related legal matters, including
+                            understanding the next steps in your case.</p>
+                        <a href="contact.html" aria-label="Discuss your traffic matter">Discuss your matter</a>
+                    </section>
                 </div>
+                </div>
+                <figure class="image featured local-image">
+                    <img src="images/buffalo-1200.jpg" srcset="images/buffalo-640.jpg 640w, images/buffalo-1200.jpg 1200w"
+                        sizes="(max-width: 768px) 90vw, (max-width: 1333px) 85vw, 1136px"
+                        alt="Buffalo City Hall viewed from a downtown street" width="1200" height="800" loading="lazy" decoding="async" />
+                    <figcaption>Serving Buffalo and the surrounding communities.</figcaption>
+                </figure>
             </section>
         </section>
     </main>
